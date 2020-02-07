@@ -1,0 +1,10 @@
+ROBOT scripts for QUESTO
+
+	- IAO import
+	
+robot extract --method BOT --input "TARGET_FOLDER\IAO\src\ontology\iao-edit.owl" --term-file iao_import_for_questo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\iao_for_questo.owl
+
+
+	- OBI import
+	
+robot extract --method BOT --input "TARGET_FOLDER\src\ontology\obi-edit.owl --term-file obi_import_for_questo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\obi_for_questo.owl
